@@ -1,0 +1,94 @@
+{
+  "__metadata__": {
+    "title": "Adventure",
+    "start": "classroom"
+  },
+  "classroom": {
+    "name": "classroom",
+    "description": "You're in a lecture hall, for some reason.",
+    "exits": [
+      {
+        "destination": "hallway",
+        "description": "A door leads into the hall."
+      },
+      {
+        "destination": "dungeon",
+        "description": "You see a light in the distance."
+      }
+    ],
+    "items": [
+      "Professor"
+    ]
+  },
+  "hallway": {
+    "name": "hallway",
+    "description": "This is a hallway with many locked doors.",
+    "exits": [
+      {
+        "destination": "classroom",
+        "description": "Go back into the lecture hall."
+      },
+      {
+        "destination": "staircase",
+        "description": "A door with the words STAIRS is stuck open."
+      },
+      {
+        "destination": "kitchen",
+        "description": "There is a door with the words KITCHEN above it."
+      }
+    ],
+    "items": [
+      "Mirrors"
+    ]
+  },
+  "staircase": {
+    "name": "staircase",
+    "description": "The staircase leads downward.",
+    "exits": [
+      {
+        "destination": "hallway",
+        "description": "Nevermind; go back to the hallway."
+      },
+      {
+        "destination": "outside",
+        "description": "A door at the bottom of the stairs has a red, glowing, EXIT sign."
+      }
+    ],
+    "items": [
+      "Posters"
+    ]
+  },
+  "outside": {
+    "name": "outside",
+    "description": "You've escaped! It's cold out.",
+    "exits": [],
+    "items": [],
+    "ends_game": true
+  },
+  "kitchen": {
+    "name": "kitchen",
+    "description": "You're in the kitchen, for absolutely no reason.",
+    "exits": [
+      {
+        "destination": "hallway",
+        "description": "Go back to the hallway."
+      },
+      {
+        "destination": "classroom",
+        "description": "Go back into the lecture hall."
+      }
+    ],
+    "items": [
+      "Turtles"
+    ]
+  },
+  "dungeon": {
+    "name": "dungeon",
+    "description": "You didn't notice the large uncovered manhole and fell to your death. Sorry.",
+    "exits": [],
+    "items": [
+      "Donald Trump"
+    ],
+    "ends_game": true
+  }
+}

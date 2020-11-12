@@ -1,0 +1,138 @@
+{
+  "__metadata__": {
+    "title": "Battell",
+    "start": "entrance"
+  },
+  "entrance": {
+    "name": "entrance",
+    "description": "You're in Battell entrance. You want to have a good time. Where would you like to go?",
+    "exits": [
+      {
+        "destination": "staircase",
+        "description": "You go up the staircase to the second floor."
+      },
+      {
+        "destination": "kitchen",
+        "description": "It smells like burnt popcorn over there. Follow the smell?"
+      }
+    ],
+    "items": [
+      "Broom"
+    ]
+  },
+  "basement": {
+    "name": "basement",
+    "description": "Yikes, you just inhaled so much mold. This was a mistake.",
+    "exits": [],
+    "items": [],
+    "ends_game": true
+  },
+  "b2s": {
+    "name": "b2s",
+    "description": "You're in B2S... This seems pretty lame. Let's go somewhere else.",
+    "exits": [
+      {
+        "destination": "staircase",
+        "description": "You go back to the stairs."
+      },
+      {
+        "destination": "b2c",
+        "description": "You see a strange light over in center."
+      }
+    ],
+    "items": [
+      "Garbage"
+    ]
+  },
+  "b2c": {
+    "name": "b2c",
+    "description": "You're in B2C... This seems pretty lame. Let's go somewhere else.",
+    "exits": [
+      {
+        "destination": "staircase",
+        "description": "You go back to the stairs."
+      },
+      {
+        "destination": "b2s",
+        "description": "Center is boring. You go back to south."
+      },
+      {
+        "destination": "b2n",
+        "description": "Center is boring. You feel good vibes coming from north. You check it out."
+      }
+    ],
+    "items": [
+      "Exit Sign"
+    ]
+  },
+  "b2n": {
+    "name": "b2n",
+    "description": "Wow, you're in B2N. his place is full of amazing people. Congrats, you've found the party!",
+    "exits": [
+      {
+        "destination": "staircase",
+        "description": "You don't want to have a good time. You go back down the stairs"
+      },
+      {
+        "destination": "b2c",
+        "description": "North is too fun. You wan't to leave for some reason."
+      }
+    ],
+    "items": [
+      "Cool Kids"
+    ]
+  },
+  "College Street": {
+    "name": "College Street",
+    "description": "You're outside! It's -50 degrees celcius. You instantly die from cold shock.",
+    "exits": [],
+    "items": [],
+    "ends_game": true
+  },
+  "kitchen": {
+    "name": "kitchen",
+    "description": "Yikes, there's a mouse here. Battell must be full of mice.",
+    "exits": [
+      {
+        "destination": "entrance",
+        "description": "Go back to entrance."
+      }
+    ],
+    "items": [
+      "Burnt Popcorn"
+    ]
+  },
+  "staircase": {
+    "name": "staircase",
+    "description": "What a colorful staircase...",
+    "exits": [
+      {
+        "destination": "entrance",
+        "description": "You go back down the stairs."
+      },
+      {
+        "destination": "b2n",
+        "description": "You hear some music and laughs. Sounds like a good time."
+      },
+      {
+        "destination": "b2s",
+        "description": "It's dead silent over there. Spooky stuff."
+      },
+      {
+        "destination": "b2c",
+        "description": "You see a PubSafe officer walking around."
+      },
+      {
+        "destination": "basement",
+        "description": "You smell something weird and follow the smell."
+      },
+      {
+        "destination": "College Street",
+        "description": "It's hot in here. You want to leave."
+      }
+    ],
+    "items": [
+      "Clock"
+    ]
+  }
+}
